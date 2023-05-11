@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #111826;
+  height: 100vh;
+}
+
+/*style for navbar*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  background-color: #001233;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-nav {
+  margin-top: 10px;
+}
+.collapse {
+  background-color: rgba(59, 59, 109, 0.8);
+  padding: 5px;
+}
+.navbar-toggler-icon {
+  background-color: #734b02;
+}
+
+.navbar-brand {
+  color: #f2a81d;
+}
+.navbar-brand:hover {
+  color: #f2a81d;
+}
+
+.nav-item .nav-link {
+  margin-right: 20px;
+  color: #f2a81d;
+}
+
+.nav-item a:hover {
+  border-bottom: 1.5px solid white;
+}
+
+.btn {
+  color: #f2a81d;
+  border: 0.5px solid #f2a81d;
+}
+.btn:hover {
+  background-color: #f2a81d;
+  border: 0.5px solid #f2a81d;
+}
+.divider {
+  height: 2px;
+  color: #734b02;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+/*style crousel slide */
+.carousel {
+  position: relative;
+  z-index: 0;
+  height: 65vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.carousel img {
+  height: 80vh;
+  width: 60vw;
+  border-radius: 15px;
+  position: relative;
+}
+
+.carousel-control {
+  color: #f2a81d;
+}
+
+.Quote {
+  position: absolute;
+  color: #f2a81d;
+  top: 35vh;
+  left: 30vw;
+}
+
+.bold {
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-indicator {
+  background-color: #f2a81d;
+  font-size: 40px;
+}
+
+.carousel-indicators button {
+  background-color: #f2a81d;
+}
+
+.carousel-caption {
+  background-color: #384759;
+  padding: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+/* styling for footer */
+.footer {
+  background-color: #111826;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3vh;
+}
+
+.footer p {
+  color: aliceblue;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+  color: aliceblue;
+}
+
+/* styling our product component */
+.card {
+  padding: 10px;
+  margin: 3vw;
+  width: 250px;
+  flex-grow: 1;
+}
+
+.btn-call {
+  background-color: #384759;
+}
+.card_img img {
+  width: 15vw;
+  height: 17vh;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.info {
+  display: flex;
+  gap: 5px;
+}
+
+.mains {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.main_component h1 {
+  margin-left: 3vw;
+}
