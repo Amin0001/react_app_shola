@@ -2,7 +2,16 @@ import React from "react";
 import product_card from "./Product_data";
 import MyButton from "./button";
 import "./Product.css";
+import { useEffect } from "react";
+
 function Product() {
+  useEffect(() => {
+    const element = document.getElementById("head");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   console.log(product_card);
   const ListItems = product_card.map((item) => (
     <div className="card" key={item.id}>
@@ -33,7 +42,7 @@ function Product() {
   ));
   return (
     <div className="main_component">
-      <h1>Products</h1>
+      <h1 id="head">Products</h1>
       <div className="mains">{ListItems}</div>
     </div>
   );

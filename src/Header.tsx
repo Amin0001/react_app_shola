@@ -4,7 +4,8 @@ import image3 from "./image/new3.jpg";
 import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-
+import { Link } from "react-router-dom";
+import MyButton from "./button";
 function Header() {
   return (
     <>
@@ -29,7 +30,18 @@ function Header() {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav">
+                <form className="d-flex" role="search">
+                  <div className="search-container">
+                    <input
+                      className="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <FontAwesomeIcon icon={faSearch} className="search-icon" />
+                  </div>
+                </form>
                 <li className="nav-item">
                   <a className="nav-link" aria-current="page" href="#">
                     Men
@@ -81,18 +93,46 @@ function Header() {
                     </li>
                   </ul>
                 </li>
-              </ul>
-              <form className="d-flex" role="search">
-                <div className="search-container">
-                  <input
-                    className="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <FontAwesomeIcon icon={faSearch} className="search-icon" />
+                <div className="move">
+                  <li className="nav-item">
+                    <Link to="/">
+                      <MyButton
+                        backgroundColor="#f2a81d" //the color of the button
+                        border="2px solid #f2a81d" //color of border on hover
+                        color="#f2a81d" //color of text on hover
+                        text="Sign Up" //text on button
+                      >
+                        Sign Up
+                      </MyButton>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/sign">
+                      {" "}
+                      <MyButton
+                        backgroundColor="#f2a81d" //the color of the button
+                        border="2px solid #f2a81d" //color of border on hover
+                        color="#f2a81d" //color of text on hover
+                        text="Sign In" //text on button
+                      >
+                        Sign In
+                      </MyButton>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/product">
+                      <MyButton
+                        backgroundColor="#f2a81d" //the color of the button
+                        border="2px solid #f2a81d" //color of border on hover
+                        color="#f2a81d" //color of text on hover
+                        text="Home" //text on button
+                      >
+                        Home
+                      </MyButton>
+                    </Link>
+                  </li>
                 </div>
-              </form>
+              </ul>
             </div>
           </div>
         </nav>
