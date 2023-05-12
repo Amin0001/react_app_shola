@@ -138,7 +138,7 @@ function Header() {
                       <span className="shopping-bag-icon">
                         <FontAwesomeIcon icon={faShoppingBag} />
                       </span>
-                      Add to cart
+                      Cart
                     </button>
                   </li>
                 </div>
