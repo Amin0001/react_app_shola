@@ -56,17 +56,18 @@ const product_card = [
     thumb: image7,
   },
   {
-    id: 8,
-    product_name: "Ankara Materials",
-    description: "Gini is known as a sign of Royalty and Wealth.",
-    thumb: image8,
-  },
-  {
     id: 9,
     product_name: "Lace Materials",
     description: "Gini is known as a sign of Royalty and Wealth.",
     thumb: image9,
   },
+  {
+    id: 8,
+    product_name: "Ankara Materials",
+    description: "Gini is known as a sign of Royalty and Wealth.",
+    thumb: image8,
+  },
+
   {
     id: 10,
     product_name: "Tie and Dye Materials",

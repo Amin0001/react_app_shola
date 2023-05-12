@@ -1,6 +1,9 @@
 import image1 from "./image/new1.jpg";
 import image2 from "./image/new2.jpg";
 import image3 from "./image/new3.jpg";
+import "./index.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   return (
@@ -8,7 +11,9 @@ function Header() {
       <header>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <a className="navbar-brand">Diza Fashion</a>
+            <a style={{ color: "#f2a81d" }} className="navbar-brand">
+              Diza Fashion
+            </a>
             <button
               className="navbar-toggler"
               type="button"
@@ -78,15 +83,15 @@ function Header() {
                 </li>
               </ul>
               <form className="d-flex" role="search">
-                <input
-                  className="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button className="btn btn-outline" type="submit">
-                  Search
-                </button>
+                <div className="search-container">
+                  <input
+                    className="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <FontAwesomeIcon icon={faSearch} className="search-icon" />
+                </div>
               </form>
             </div>
           </div>
