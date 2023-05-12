@@ -3,6 +3,7 @@ import image2 from "./image/new2.jpg";
 import image3 from "./image/new3.jpg";
 import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import MyButton from "./button";
@@ -130,6 +131,15 @@ function Header() {
                         Home
                       </MyButton>
                     </Link>
+                  </li>
+
+                  <li className="nav-item">
+                    <button className="shopping-button">
+                      <span className="shopping-bag-icon">
+                        <FontAwesomeIcon icon={faShoppingBag} />
+                      </span>
+                      Add to cart
+                    </button>
                   </li>
                 </div>
               </ul>

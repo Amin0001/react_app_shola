@@ -7,6 +7,26 @@ body {
   overflow-x: hidden;
 }
 
+.shopping-bag-icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.shopping-button {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.shopping-button:hover {
+  background-color: #0069d9;
+}
+
 header {
   background-color: #111826;
   height: 100vh;
