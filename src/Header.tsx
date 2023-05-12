@@ -126,10 +126,8 @@ function Header() {
                         backgroundColor="#f2a81d" //the color of the button
                         border="2px solid #f2a81d" //color of border on hover
                         color="#f2a81d" //color of text on hover
-                        text="Home" //text on button
-                      >
-                        Home
-                      </MyButton>
+                        text="Products" //text on button
+                      ></MyButton>
                     </Link>
                   </li>
 
